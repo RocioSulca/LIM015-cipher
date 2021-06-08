@@ -44,6 +44,7 @@ function cambiar() {
 
   cipher.encode(number.value, textToCode.value);
   codedText.innerHTML= cipher.cambiandoUnaLetra;
+  
 }
 
 
