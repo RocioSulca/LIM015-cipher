@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="1screen">
+    <header id="root">
+      <h1>BIENVENIDOS A CIPHER</h1>
+     </header>
+    <figure>
+      <img src="logi.png">
+    </figure>
+    <main id="buttonFirstScreen">
+      <button id="code">CODIFICAR</button>
+      <button id="decode">DECODIFICAR</button>
+    </main>
+  </div>
+  <div id="2screen" style="display:none;">
+    <header>
+      <h1 id="cod">CODIFICAR</h1>
+    </header>
+    <section>
+      <div id="textSecondScreen">
+        <input type="text" id="textToCode" name="textToCode" placeholder="Ingrese el texto a codificar" class="mayuscula">
+        <div id="buttonSecondScreen">
+          <input type="number" id= "numero"><br><br><br>
+          <button id="codify">codifica</button><br><br><br>   
+          <button id="clean">limpiar</button><br><br><br>     
+          <button id="back1">volver</button>         
+        </div>
+        <p id="codedText" name="codedText"></p>
+      </div>
+    </section>
+  </div>
+  <div id="3screen" style="display:none;">
+    <header>
+      <h1>DECODIFICAR</h1>
+    </header>
+    <section>
+      <div id="textThirdScreen">
+        <input type="text" id="textToDecode" name="textToDecode" placeholder="Ingrese el texto a decodificar">
+        <div id="buttonThirdScreen">
+          <button id="decodify">decodifica</button><br><br><br>
+          <button id="back2">volver</button>
+        </div>
+        <p id="decodedText" name="decodedText"></p>
+      </div>
+    </section>
+  </div>
+
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
