@@ -9,35 +9,52 @@
 
 <body>
   <div id="1screen">
+    <div id="x">
+      <img src="imagen.jpg" class="couple">
+      <h2>SECRET  LOVE &hearts;</h2>      
+      <p id="primerParrafo">Con esta página, podrás cifrar y descifrar mensajes para poder comunicarte con esa persona especial. <br><br>
+      <strong>INSTRUCCIONES:</strong> <br>
+      1.- Introduce el texto a cifrar o decifrar.<br>
+      2.- Elige el desplazamiento a realizar.<br>
+      3.- Presiona el boton de accion y LISTO!
+      </p>
+      <h5>ALL YOU NEED IS LOVE!</h5><br>
+      <button id="empezar">EMPEZAR</button>
+    </div>
+  </div>
+
+
+  <div id="2screen" style="display:none;">
     <header id="root">
       <h1>BIENVENIDOS A CIPHER</h1>
-     </header>
+    </header>
     <figure>
-      <img src="logi.png">
+      <img>
     </figure>
     <main id="buttonFirstScreen">
       <button id="code">CODIFICAR</button>
       <button id="decode">DECODIFICAR</button>
     </main>
   </div>
-  <div id="2screen" style="display:none;">
+  <div id="3screen" style="display:none;">
     <header>
       <h1 id="cod">CODIFICAR</h1>
     </header>
     <section>
       <div id="textSecondScreen">
-        <input type="text" id="textToCode" name="textToCode" placeholder="Ingrese el texto a codificar" class="mayuscula">
+        <input type="text" id="textToCode" name="textToCode" placeholder="Ingrese el texto a codificar"
+          class="mayuscula">
         <div id="buttonSecondScreen">
-          <input type="number" id= "numero1"><br><br><br>
-          <button id="codify">codifica</button><br><br><br>   
-          <button id="clean1">limpiar</button><br><br><br>     
-          <button id="back1">volver</button>         
+          <input type="number" id="numero1"><br><br><br>
+          <button id="codify">codifica</button><br><br><br>
+          <button id="clean1">limpiar</button><br><br><br>
+          <button id="back1">volver</button>
         </div>
         <p id="codedText" name="codedText"></p>
       </div>
     </section>
   </div>
-  <div id="3screen" style="display:none;">
+  <div id="4screen" style="display:none;">
     <header>
       <h1>DECODIFICAR</h1>
     </header>
@@ -45,7 +62,7 @@
       <div id="textThirdScreen">
         <input type="text" id="textToDecode" name="textToDecode" placeholder="Ingrese el texto a decodificar">
         <div id="buttonThirdScreen">
-          <input type="number" id= "numero2"><br><br><br>
+          <input type="number" id="numero2"><br><br><br>
           <button id="decodify">decodifica</button><br><br><br>
           <button id="clean2">limpiar</button><br><br><br>
           <button id="back2">volver</button>

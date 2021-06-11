@@ -11,10 +11,10 @@ const cipher = {
       if (ascii >= 65 && ascii <= 90) {
         let letra = (ascii - 65 + parseInt(offsetC)) % 26 + 65;
         letraC = String.fromCharCode(letra);
-      } /*else if (ascii >= 97 && ascii <= 122) {
+      } else if (ascii >= 97 && ascii <= 122) {
         let letra = (ascii - 97 + parseInt(offsetC)) % 26 + 97;
         letraC = String.fromCharCode(letra);
-      }*/
+      }
       for (let i = 0; i < letraC.length; i++) {
         cadenaC += letraC
       }
@@ -34,10 +34,11 @@ const cipher = {
       if (asciiD >= 65 && asciiD <= 90) {
         let letras = (asciiD + 65 - parseInt(offsetD)) % 26 + 65;
         letraD = String.fromCharCode(letras);
-      } /*else if (asciiD >= 97 && asciiD <= 122) {
+      } else if (asciiD >= 97 && asciiD <= 122) {
         let letras = (asciiD + 97 - parseInt(offsetD)) % 26 + 97;
         letraD = String.fromCharCode(letras);
-      }*/
+        console.log(letras)
+      }
       for (let i = 0; i < letraD.length; i++) {
         cadenaD += letraD
       }

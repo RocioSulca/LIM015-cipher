@@ -2,11 +2,51 @@ h1 {
     text-align: center;
     color: #070707;
     padding-top: 4%;
-    font-family: 'Courier New', Courier, monospace;   
+    font-family: "Courier New", Courier, monospace;   
     font-size: 400%;
+}
+h2 {
+    font-family: Brush Script MT;
+    font-size: 400%;
+    text-align: center;
+    color: #c81d25;
+}
+h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 130%;
+    padding-left: 3%;
+    text-align: center;
+    color: #b7094c;
+}
+
+#primerParrafo{
+    font-family: Candara;
+    font-size: 150%;
+    padding-left: 3%;
 }
 #codify, #decodify  {
     background: #8e9aaf ;
+}
+.couple {
+    margin-top: -30px;
+    float: right;
+    width: 600px;
+    height: 600px;
+    display: block;
+    padding-right: 5%;
+    padding-left: 10%;
+}
+#empezar {
+    font-family: Lucida Console;
+    font-size: 170%;
+    color: #caf0f8;
+    background-color: #e93c3c;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    position:absolute;
+    left: 15%;
 }
 #buttonFirstScreen {
     display: flex;
@@ -14,8 +54,7 @@ h1 {
     justify-content : space-between;
     padding-right: 20%;
     padding-left: 20%;
-    padding-top: 5%;
-    
+    padding-top: 5%;    
 }
 #textSecondScreen {
     display: flex;
@@ -51,10 +90,6 @@ figure{
     height: 270px;
     margin: auto;
     display: block;
-}
-img{
-    width: 250px;
-    height: 300px;
 }
 #code, #decode {
     background: #c9184a;
