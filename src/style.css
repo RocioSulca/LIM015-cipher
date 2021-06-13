@@ -1,28 +1,27 @@
 h1 {
-    text-align: center;
-    color: #070707;
-    padding-top: 4%;
-    font-family: "Courier New", Courier, monospace;   
-    font-size: 400%;
-}
-h2 {
     font-family: Brush Script MT;
     font-size: 400%;
     text-align: center;
     color: #c81d25;
 }
+#title {
+    font-family: Brush Script MT;
+    font-size: 300%;
+    color: #c81d25;
+    margin-left: 39px;
+}
 h5 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 130%;
+    font-size: 200%;
     padding-left: 3%;
     text-align: center;
     color: #b7094c;
 }
-
 #primerParrafo{
     font-family: Candara;
-    font-size: 150%;
+    font-size: 180%;
     padding-left: 3%;
+    text-align: center;
 }
 #codify, #decodify  {
     background: #8e9aaf ;
@@ -36,6 +35,26 @@ h5 {
     padding-right: 5%;
     padding-left: 10%;
 }
+h3 {
+    float: right;
+    padding-right: 13%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 250%;
+    color: #ba181b;
+}
+#segundoParrafo{
+    float: right;
+    padding-right: 10%;
+    margin-top: -20%;
+    font-family: Cambria; 
+    font-size: 150%;
+    background-color: #fff0f3;
+    margin-right: 23%;
+    padding: 4px;
+    border-radius: 10px;
+    border-color: black;
+    border: 2px;
+}
 #empezar {
     font-family: Lucida Console;
     font-size: 170%;
@@ -48,13 +67,29 @@ h5 {
     position:absolute;
     left: 15%;
 }
-#buttonFirstScreen {
-    display: flex;
-    justify-content: center;
-    justify-content : space-between;
-    padding-right: 20%;
-    padding-left: 20%;
-    padding-top: 5%;    
+li {
+    float: left;
+    list-style: none;
+    padding: 20px;
+    margin-top: -20px;
+}
+a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 130%;
+    color: #800e13;
+}
+li:hover a {
+    color: black;
+}
+nav {
+    float: right;
+    margin-top: -100px;
+    margin-right: 100px;
+}
+header {
+    background-color: #edede8;
+    margin-top: -40px;
 }
 #textSecondScreen {
     display: flex;
@@ -82,7 +117,7 @@ h5 {
     height: 350px;
 }
 body {
-    background: url(2.jpg);
+    background: url(fondo.jpg);
     background-size: cover;
 }
 figure{
@@ -91,7 +126,12 @@ figure{
     margin: auto;
     display: block;
 }
-#code, #decode {
+#buttonFirstScreen {
+    background-color: darkblue;
+    margin-top: -20px;
+    padding-top: -5px;
+}
+#code {
     background: #c9184a;
     color: #caf0f8;
     border: #caf0f8;
@@ -100,6 +140,22 @@ figure{
     height: 50px;
     font-size: 150%;
     border-radius: 5px;
+    margin-left: 450px;
+    position:absolute;
+    top: 77%;
+}
+#decode {
+    background: #c9184a;
+    color: #caf0f8;
+    border: #caf0f8;
+    box-shadow: 5px 5px 0px #892b64;
+    width: 200px;
+    height: 50px;
+    font-size: 150%;
+    border-radius: 5px;
+    margin-left: 950px;
+    position:absolute;
+    top: 77%;
 }
 #code:hover {
     background: rgb(214, 181, 211);
@@ -110,4 +166,39 @@ figure{
     background: rgb(214, 181, 211);
     background: linear-gradient(0deg, rgb(151, 90, 163) 0%, rgb(161, 194, 228) 100%);
     color: black;
+}
+.fb {
+    width: 60px;
+    height: 34px;
+    margin-bottom: -15px;
+    margin-left: 20px;
+}
+.insta {
+    width: 56px;
+    height: 50px;
+    margin-bottom: -20px;
+    margin-left: 30px;
+}
+.twitt {
+    width: 56px;
+    height: 50px;
+    margin-bottom: -20px;
+    margin-left: 30px;
+}
+.goog {
+    width: 56px;
+    height: 32px;
+    margin-bottom: -15px;
+    margin-left: 30px;
+}
+label {
+    padding-bottom: 5px;
+    padding: 30px;
+    font-family: Candara;
+    size: 15px;
+    color: #14213d;
+}
+footer {
+    position:absolute;
+    top: 89%;
 }

@@ -1,5 +1,9 @@
 import cipher from './cipher.js';
 
+document.getElementById("home").addEventListener("click", () =>{
+  document.getElementById("2screen").style.display = "none";
+  document.getElementById("1screen").style.display = "block";
+});
 document.getElementById("empezar").addEventListener("click", () =>{
   document.getElementById("1screen").style.display = "none";
   document.getElementById("2screen").style.display = "block";
