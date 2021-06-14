@@ -202,3 +202,10 @@ footer {
     position:absolute;
     top: 89%;
 }
+h2 {
+    text-align: center;
+    color: #070707;
+    padding-top: 4%;
+    font-family: 'Courier New', Courier, monospace;   
+    font-size: 400%;    
+}
