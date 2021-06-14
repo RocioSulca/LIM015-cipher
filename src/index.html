@@ -12,8 +12,9 @@
     <div id="x">
       <img src="imagen.jpg" class="couple">
       <h1>SECRET LOVE &hearts;</h1><br>
-      <p id="primerParrafo"><strong>A través de esta página, podrás cifrar y descifrar mensajes para poder comunicarte con esa persona
-        especial &hearts;</strong> <br><br></p>
+      <p id="primerParrafo"><strong>A través de esta página, podrás cifrar y descifrar mensajes para poder comunicarte
+          con esa persona
+          especial &hearts;</strong> <br><br></p>
       <h5>ALL YOU NEED IS LOVE!</h5><br>
       <button id="empezar">EMPEZAR</button>
     </div>
@@ -43,7 +44,6 @@
       </div>
     </main>
     <footer>
-      
       <img src="imagfb.png" class="fb">
       <label><strong>Siguenos en Facebook</strong></label>
       <img src="imagins.png" class="insta">
@@ -55,35 +55,39 @@
     </footer>
   </div>
   <div id="3screen" style="display:none;">
-    <header>
-      <h2 id="cod">CODIFICAR</h2>
-    </header>
+    <div class="name">
+      <h6>SECRET LOVE &hearts;</h6>
+      <img src="logo.png" class="logo">
+    </div>
+    <h2 id="cod">CODIFICA</h2>
     <section>
       <div id="textSecondScreen">
-        <input type="text" id="textToCode" name="textToCode" placeholder="Ingrese el texto a codificar"
+        <input type="text" id="textToCode" name="textToCode" placeholder="Ingresa el mensaje a codificar"
           class="mayuscula">
         <div id="buttonSecondScreen">
-          <input type="number" id="numero1"><br><br><br>
-          <button id="codify">codifica</button><br><br><br>
-          <button id="clean1">limpiar</button><br><br><br>
-          <button id="back1">volver</button>
+          <input type="number" id="numero1" min="0" max="100" placeholder="DESPLAZAMIENTO"><br><br><br>
+          <button id="codify"> <strong>CODIFICA</strong></button><br><br><br>
+          <button id="clean1">Borrar</button><br><br><br>
+          <button id="back1">Regresar</button>
         </div>
         <p id="codedText" name="codedText"></p>
       </div>
     </section>
   </div>
   <div id="4screen" style="display:none;">
-    <header>
-      <h2>DECODIFICAR</h2>
-    </header>
+    <div class="name">
+      <h6>SECRET LOVE &hearts;</h6>
+      <img src="logo.png" class="logo">
+    </div>
+    <h2>DECODIFICA</h2>
     <section>
       <div id="textThirdScreen">
-        <input type="text" id="textToDecode" name="textToDecode" placeholder="Ingrese el texto a decodificar">
+        <input type="text" id="textToDecode" name="textToDecode" placeholder="Ingrese el mensaje a decodificar">
         <div id="buttonThirdScreen">
-          <input type="number" id="numero2"><br><br><br>
-          <button id="decodify">decodifica</button><br><br><br>
-          <button id="clean2">limpiar</button><br><br><br>
-          <button id="back2">volver</button>
+          <input type="number" id="numero2" min="0" max="100" placeholder="DESPLAZAMIENTO"><br><br><br>
+          <button id="decodify"><strong>DECODIFICA</strong></button><br><br><br>
+          <button id="clean2">Borrar</button><br><br><br>
+          <button id="back2">Regresar</button>
         </div>
         <p id="decodedText" name="decodedText"></p>
       </div>

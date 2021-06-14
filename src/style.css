@@ -23,9 +23,6 @@ h5 {
     padding-left: 3%;
     text-align: center;
 }
-#codify, #decodify  {
-    background: #8e9aaf ;
-}
 .couple {
     margin-top: -30px;
     float: right;
@@ -98,11 +95,31 @@ header {
     padding-right: 10%;
     padding-left: 10%;        
 }
-#textToCode, #codedText, #textToDecode, #decodedText  {
+#codify, #decodify  {
+    width: 150px;
+    height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 130%;
+    border: 0px;
+    border-radius: 20px;
+    background: #b392ac ;
+    color: #f8f9fa;
+    font-style: italic;
+}
+#clean1, #clean2, #back1, #back2 {
+    width: 150px;
+    height: 40px;
+    font-size: 130%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-color: #c9184a;
+    border-radius: 15px;
+    background-color: white;
+} 
+#textToCode, #textToDecode, #codedText, #decodedText {
     width: 300px; 
     height: 350px;
     box-shadow: 8px 8px 30px 0px rgb(0 0 0 / 75%);
-    background: #caf0f8;
+    background: #e8e8e4;
     text-align: center;
 }
 #textThirdScreen {
@@ -111,10 +128,6 @@ header {
     justify-content : space-between;
     padding-right: 10%;
     padding-left: 10%;    
-}
-#textToDecode, #decodedText {
-    width: 300px; 
-    height: 350px;
 }
 body {
     background: url(fondo.jpg);
@@ -125,11 +138,6 @@ figure{
     height: 270px;
     margin: auto;
     display: block;
-}
-#buttonFirstScreen {
-    background-color: darkblue;
-    margin-top: -20px;
-    padding-top: -5px;
 }
 #code {
     background: #c9184a;
@@ -204,8 +212,25 @@ footer {
 }
 h2 {
     text-align: center;
-    color: #070707;
-    padding-top: 4%;
-    font-family: 'Courier New', Courier, monospace;   
+    color: #f10909;
+    margin-top: -60px;
+    font-family: garamond;   
     font-size: 400%;    
+}
+h6 {
+    font-family: Brush Script MT;
+    font-size: 250%;
+    color: #c81d25;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    position:absolute;
+    top: 1%;
+}
+#numero1, #numero2 {
+    width: 150px;
 }
