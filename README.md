@@ -15,9 +15,12 @@
 Secret Love es una pagina web para parejas 💑 en donde se puede cifrar o descifrar mensajeria con cualquier desplazamiento de una forma segura en donde nadie más que la persona que recibe el mensaje y el numero de desplazamiento podrá saber lo que contiene el mensaje.
 
 ## 2. Prototipo en Balsamiq
-
+![](images/Prototipo.PNG)
 ## 3. Imágen del proyecto final
-
+![](images/Proyecto1.PNG)
+![](images/Proyecto2.PNG)
+![](images/Proyecto3.PNG)
+![](images/Proyecto4.PNG)
 ## 4. Investigación UX
 
 #### Quienes son los principales usuarios del producto
