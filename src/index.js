@@ -2,27 +2,31 @@ import cipher from './cipher.js';
 
 document.getElementById("home").addEventListener("click", () => {
   document.getElementById("2screen").style.display = "none";
-  document.getElementById("1screen").style.display = "block";
+  document.getElementById("1screen").style.display = "flex";
 });
 document.getElementById("empezar").addEventListener("click", () => {
   document.getElementById("1screen").style.display = "none";
-  document.getElementById("2screen").style.display = "block";
+  document.getElementById("2screen").style.display = "flex";
+  document.getElementById("3screen").style.display = "flex";
 });
 document.getElementById("code").addEventListener("click", () => {
-  document.getElementById("2screen").style.display = "none";
-  document.getElementById("3screen").style.display = "block";
+  // document.getElementById("2screen").style.display = "none";
+  document.getElementById("3screen").style.display = "none";
+  document.getElementById("4screen").style.display = "flex";
+
 });
 document.getElementById("decode").addEventListener("click", () => {
-  document.getElementById("2screen").style.display = "none";
-  document.getElementById("4screen").style.display = "block";
+  // document.getElementById("2screen").style.display = "none";
+  document.getElementById("3screen").style.display = "none";
+  document.getElementById("5screen").style.display = "flex";
 });
 document.getElementById("back1").addEventListener("click", () => {
-  document.getElementById("3screen").style.display = "none";
-  document.getElementById("2screen").style.display = "block";
+  document.getElementById("4screen").style.display = "none";
+  document.getElementById("3screen").style.display = "flex";
 });
 document.getElementById("back2").addEventListener("click", () => {
-  document.getElementById("4screen").style.display = "none";
-  document.getElementById("2screen").style.display = "block";
+  document.getElementById("5screen").style.display = "none";
+  document.getElementById("3screen").style.display = "flex";
 });
 document.getElementById("clean1").addEventListener("click", () => {
   textToCode.value = ""
@@ -35,6 +39,15 @@ document.getElementById("clean2").addEventListener("click", () => {
   number2.value = ""
 });
 
+// navBar
+const nav = document.getElementById("nav");
+
+document.getElementById("open-menu").addEventListener("click", () => {
+  nav.classList.add("visible")
+});
+document.getElementById("close-menu").addEventListener("click", () => {
+  nav.classList.remove("visible")
+});
 
 const textToCode = document.getElementById("textToCode");
 const codedText = document.getElementById("codedText");
@@ -54,4 +67,3 @@ document.getElementById("decodify").addEventListener("click", function () {
 });
 
 
-console.log(cipher);

@@ -2,97 +2,140 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Caesar Cipher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-  <div id="1screen">
-    <div id="x">
-      <img src="imagen.jpg" class="couple">
-      <h1>SECRET LOVE &hearts;</h1><br>
-      <p id="primerParrafo"><strong>A través de esta página, podrás cifrar y descifrar mensajes para poder comunicarte
-          con esa persona
-          especial &hearts;</strong> <br><br></p>
-      <h5>ALL YOU NEED IS LOVE!</h5><br>
-      <button id="empezar">EMPEZAR</button>
-    </div>
-  </div>
-  <div id="2screen" style="display:none;">
-    <header id="root">
-      <ul id="title"><strong> SECRET LOVE &hearts; </strong> </ul>
-      <nav>
-        <ul>
-          <li id="home"><a href="">HOME</a></li>
-          <li><a href="">QUIENES SOMOS</a></li>
-          <li><a href="">CONTACTANOS</a></li>
-          <li><a href="">BLOG</a></li>
+  <section id="1screen" class="firstScreen" >
+    <main id="firstContainer">
+      <article class="textContainer">
+        <h1 class="titleh1">SECRET LOVE &hearts;</h1>
+        <p id="primerParrafo" class="primerParrafo">A través de esta página, podrás cifrar y descifrar mensajes para
+          poder comunicarte
+          con esa persona especial &hearts;</p>
+        <h5 class="texth5">ALL YOU NEED IS LOVE!</h5>
+        <section class="buttonContainer">
+          <button id="empezar" class="buttonStart">EMPEZAR</button>
+        </section>
+      </article>
+      <figure class="imageContainer">
+        <img src="imagen.jpg" class="couple">
+      </figure>
+    </main>
+  </section>
+
+
+  <div id="2screen" class="secondScreen" style="display:none;">
+    <header id="root" class="root">
+      <h2 id="title" class="title">SECRET LOVE &hearts;</h2>
+      <button class="open-menu" id="open-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button>
+      <nav class="nav" id="nav">
+        <div class="close-wrapper">
+          <button class="close-menu" id="close-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+          </button>
+        </div>
+        <ul class="nav-list">
+          <li id="home"><a href="#">HOME</a></li>
+          <li><a href="#">QUIENES SOMOS</a></li>
+          <li><a href="#">CONTACTANOS</a></li>
+          <li><a href="#">BLOG</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <img src="logo.png" alt="logo">
-      <h3>BIENVENIDOS A SECRET LOVE &hearts;</h3>
-      <p id="segundoParrafo"><strong>INSTRUCCIONES:</strong><br><br>
-        1.- &nbsp;&nbsp;Introduce el texto a cifrar o decifrar.<br>
-        2.- &nbsp;&nbsp;Elige el desplazamiento a realizar.<br>
-        3.- &nbsp;&nbsp;Presiona el boton de acción y LISTO!</p>
-      <div id="buttonFirstScreen">
-        <button id="code">CODIFICAR</button>
-        <button id="decode">DECODIFICAR</button>
+
+    <main id="3screen" class="thirdScreen" style="display:none;">
+      <h3>BIENVENIDOS &hearts;</h3>
+      <section class="logoInstruction">
+        <figure class="imgLogoContainer">
+          <img src="logo.png" alt="logo" class="imgLogo">
+        </figure>
+        <section class="sectionInstruction">
+          <p id="segundoParrafo" class="segundoParrafo">INSTRUCCIONES:</p>
+          <ol>
+            <li>Introduce el texto a cifrar o decifrar.</li>
+            <li>Elige el desplazamiento a realizar.</li>
+            <li>Presiona el boton de acción y LISTO!</li>
+          </ol>
+        </section>
+      </section>
+      <div id="buttonFirstScreen" class="buttonsFirstScreen">
+        <button id="code" class="code">CODIFICAR</button>
+        <button id="decode" class="decode">DECODIFICAR</button>
       </div>
     </main>
+
+    <div id="4screen" class="fourthScreen" style="display:none;">
+      <h2 id="cod">CODIFICA</h2>
+      <section class="sectionAll">
+        <div id="textSecondScreen" class="textSecondScreen">
+          <div class="codeTextSection">
+            <textarea name="textToCode" id="textToCode" class="textToCode"
+              placeholder="Ingresa el mensaje a codificar"></textarea>
+          </div>
+          <div id="buttonSecondScreen" class="buttonSecondScreen">
+            <input type="number" id="numero1" min="0" max="100" class="desplazamiento" placeholder="Desplazamiento">
+            <button id="codify" class="codify">CODIFICA</button>
+          </div>
+          <div class="codeTextSection">
+            <p id="codedText" class="codedText" name="codedText"></p>
+          </div>
+
+        </div>
+        <div class="buttonSection">
+          <button id="clean1" class="clean">Borrar</button>
+          <button id="back1" class="back">Regresar</button>
+        </div>
+      </section>
+    </div>
+
+
+    <div id="5screen" class="fifthScreen" style="display:none;">
+      <h2>DECODIFICA</h2>
+      <section class="sectionAll">
+        <div id="textThirdScreen" class="textSecondScreen">
+          <div class="codeTextSection">
+            <textarea name="textToDecode" id="textToDecode" class="textToDecode"
+              placeholder="Ingresa el mensaje a decodificar"></textarea>
+          </div>
+          <div id="buttonThirdScreen" class="buttonThirdScreen">
+            <input type="number" id="numero2" min="0" max="100" class="desplazamiento" placeholder="Desplazamiento">
+            <button id="decodify" class="codify">DECODIFICA</button>
+          </div>
+          <div class="codeTextSection">
+            <p id="decodedText" class="codedText" name="decodedText"></p>
+          </div>
+        </div>
+        <div class="buttonSection">
+          <button id="clean2" class="clean">Borrar</button>
+          <button id="back2" class="back">Regresar</button>
+        </div>
+      </section>
+    </div>
+
+
     <footer>
-      <img src="imagfb.png" class="fb">
-      <label><strong>Siguenos en Facebook</strong></label>
-      <img src="imagins.png" class="insta">
-      <label><strong>Siguenos en Instagram</strong></label>
-      <img src="imagtwit.png" class="twitt">
-      <label><strong>Siguenos en Twiter</strong></label>
-      <img src="imagoo.png" class="goog">
-      <label><strong>Siguenos en Google Plus</strong></label>
+      <p>Hecho con mucho amor</p>
     </footer>
   </div>
-  <div id="3screen" style="display:none;">
-    <div class="name">
-      <h6>SECRET LOVE &hearts;</h6>
-      <img src="logo.png" class="logo">
-    </div>
-    <h2 id="cod">CODIFICA</h2>
-    <section>
-      <div id="textSecondScreen">
-        <input type="text" id="textToCode" name="textToCode" placeholder="Ingresa el mensaje a codificar"
-          class="mayuscula">
-        <div id="buttonSecondScreen">
-          <input type="number" id="numero1" min="0" max="100" placeholder="DESPLAZAMIENTO"><br><br><br>
-          <button id="codify"> <strong>CODIFICA</strong></button><br><br><br>
-          <button id="clean1">Borrar</button><br><br><br>
-          <button id="back1">Regresar</button>
-        </div>
-        <p id="codedText" name="codedText"></p>
-      </div>
-    </section>
-  </div>
-  <div id="4screen" style="display:none;">
-    <div class="name">
-      <h6>SECRET LOVE &hearts;</h6>
-      <img src="logo.png" class="logo">
-    </div>
-    <h2>DECODIFICA</h2>
-    <section>
-      <div id="textThirdScreen">
-        <input type="text" id="textToDecode" name="textToDecode" placeholder="Ingrese el mensaje a decodificar">
-        <div id="buttonThirdScreen">
-          <input type="number" id="numero2" min="0" max="100" placeholder="DESPLAZAMIENTO"><br><br><br>
-          <button id="decodify"><strong>DECODIFICA</strong></button><br><br><br>
-          <button id="clean2">Borrar</button><br><br><br>
-          <button id="back2">Regresar</button>
-        </div>
-        <p id="decodedText" name="decodedText"></p>
-      </div>
-    </section>
-  </div>
+
+
+
 
 
   <script src="index.js" type="module"></script>
